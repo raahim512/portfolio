@@ -468,6 +468,11 @@ video {
     transition: 500ms;
 }
 
+#preview-caption:hover {
+    opacity: 0;
+    transition: 250ms;
+}
+
 #preview-caption::before {
     content: "(Hover to hide)";
     display: block;
@@ -533,11 +538,6 @@ th {
         overflow-y: auto;
         overflow-x: clip;
         min-width: 12em;
-    }
-
-    #preview-caption:hover {
-        opacity: 0;
-        transition: 250ms;
     }
 }
 
@@ -657,13 +657,13 @@ th {
         font-size: 18px;
     }
 
-    #preview-caption:active {
+    /* #preview-caption:active {
         opacity: 0;
         transition: 250ms;
-    }
+    } */
 
     #preview-caption::before {
-        content: "(Hold to hide)";
+        content: "(Click to hide)";
     }
 
     #power-options-box {
