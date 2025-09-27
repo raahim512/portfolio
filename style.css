@@ -38,6 +38,7 @@ hr {
 }
 
 * {
+    -webkit-tap-highlight-color: transparent;
     transition: 100ms;
 }
 
