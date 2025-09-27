@@ -117,11 +117,26 @@ body {
     animation: loadIn 1s forwards;
     scrollbar-gutter: stable;
 
-    background-image: url("assets/8738899.jpg");
+    background: transparent;
+    /* background-image: url("assets/8738899.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    scrollbar-gutter: stable;
+    scrollbar-gutter: stable; */
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("assets/8738899.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
 }
 
 .wrapper {
