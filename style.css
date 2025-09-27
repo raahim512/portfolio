@@ -648,6 +648,10 @@ th {
         max-width: 100%;
         box-sizing: border-box;
     }
+    
+    #preview-img {
+        pointer-events: none;
+    }
 
     #preview-caption {
         font-size: 18px;
