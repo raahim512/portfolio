@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="fonts/regular-icon-font-free/lineicons.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<div id="preloader">
+  <div class="loader"></div>
+</div>
+
+    <!-- Hello, World! -->
+    <div class="wrapper">
+        <div class="topbar" class="buttons">
+            <span class="title">My Portfolio</span>
+            <span></span>
+            <span id="clock">20:00</span>
+            <span onclick="togglePowerOptions(true)">⏻</span>
+        </div>
+        <nav>
+            <a data-target="template-me"><span class="active"><i class="lni lni-home-2"></i>Me</span></a>
+            <a data-target="template-projects"><span><i class="lni lni-star-fat"></i>Featured Projects</span></a>
+            <a data-target="template-tools"><span><i class="lni lni-file-multiple"></i>Languages & Tools</span></a>
+        </nav>
+        <div class="image"><img src="assets/image.png" width="250px" height="250px" data-caption="Jedi 'Master' Anakin Skywalker"></div>
+        <div class="container">
+            <div class="title">
+                <span style="display: flex; align-items: center; gap: 5px;"><i class="lni lni-file-pencil"></i>README.md</span>
+                <span style="display: flex; gap: 10px" class="buttons">
+                    <span>–</span>
+                    <span>▢</span>
+                    <span>⨉</span>
+                </span>
+            </div>
+            <div class="main">
+                <!-- Hello, World! -->
+                <div class="formatted">
+<h1>Hi there 👋</h1><hr>
+
+My name's Raahim. I'm a self taught developer and OS enthusiast with a passion for everything CompSci. I'm Currently diving deep into Windows internals, virtualization and cybersecurity.<br><br>
+You can check out the pages on this website to know more about me and my projects!
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+<div id="template-me" class="template" style="display: none;">
+            <div class="title">
+                <span style="display: flex; align-items: center; gap: 5px;"><i class="lni lni-file-pencil"></i>README.md</span>
+                <span style="display: flex; gap: 10px" class="buttons">
+                    <span>–</span>
+                    <span>▢</span>
+                    <span>⨉</span>
+                </span>
+            </div>
+            <div class="main">
+                <!-- Hello, World! -->
+                <div class="formatted">
+<h1>Hi there 👋</h1><hr>
+
+My name's Raahim. I'm a self taught developer and OS enthusiast with a passion for everything CompSci. I'm Currently diving deep into Windows internals, virtualization and cybersecurity.<br><br>
+You can check out the pages on this website to know more about me and my projects!
+
+                </div>
+            </div>
+</div>
+
+<div id="template-projects" class="template" style="display: none;">
+            <div class="title">
+                <span style="display: flex; align-items: center; gap: 5px;"><i class="lni lni-file-pencil"></i>Title.md</span>
+                <span style="display: flex; gap: 10px" class="buttons">
+                    <span>–</span>
+                    <span>▢</span>
+                    <span>⨉</span>
+                </span>
+            </div>
+            <div class="main" style="margin-bottom: 10px;">
+                <div class="formatted standalone">
+                    <h3>Featured projects:</h3>
+                </div>
+            </div>
+
+            <div class="horizontal">
+            <div>
+                <div class="title">
+                    <span style="display: flex; align-items: center; gap: 5px;"><i class="lni lni-file-pencil"></i>Classboards.md</span>
+                    <span style="display: flex; gap: 10px" class="buttons">
+                        <span>–</span>
+                        <span>▢</span>
+                        <span>⨉</span>
+                    </span>
+                </div>
+                <div class="main">
+                    <!-- Hello, World! -->
+                    <div class="formatted">
+
+        <h3>Forum/Social Media:</h3><hr>
+        <p>I built a little messageboard website for the "Code2Success" Python programming competition in my school back in 2023. It was built with Flask and HTML/CSS as a forum for students, parents and teachers to express their ideas in a safe online space.</p>
+
+                    <button onclick="switchTemplate('template-project-forum')"><i class="lni lni-arrow-right"></i>Read more</button>
+                    </div>
+                </div>
+              </div>
+              <div>
+                <div class="title">
+                    <span style="display: flex; align-items: center; gap: 5px;"><i class="lni lni-file-pencil"></i>PyCorrupt.md</span>
+                    <span style="display: flex; gap: 10px" class="buttons">
+                        <span>–</span>
+                        <span>▢</span>
+                        <span>⨉</span>
+                    </span>
+                </div>
+                <div class="main">
+                    <!-- Hello, World! -->
+                    <div class="formatted">
+
+        <h3>GDI Malware:</h3><hr>
+        <p>Inspired by YouTube classics like Solaris.exe and Sulfoxide.exe. I've made versions of my own using only Python by utilizing Windows API functionality (such as the Graphics Device Interface) to produce colorful and stroke-inducing visuals coupled with a deadly payload that can brick any hard drive's MBR.<p><small>(DISCLAIMER! Just for educational purposes!)</small></p></p>
+
+                    <button onclick="switchTemplate('template-project-malware')"><i class="lni lni-arrow-right"></i>Read more</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+</div>
+
+<div id="template-tools" class="template" style="display: none;">
+            <div class="title">
+                <span style="display: flex; align-items: center; gap: 5px;"><i class="lni lni-file-pencil"></i>Languages and tools.md</span>
+                <span style="display: flex; gap: 10px" class="buttons">
+                    <span>–</span>
+                    <span>▢</span>
+                    <span>⨉</span>
+                </span>
+            </div>
+            <div class="main">
+                <!-- Hello, World! -->
+                <div class="formatted">
+
+<h3>Languages and tools I work with:</h3><hr>
+<ul>
+    <li>Python (Flask, pywin32, win32gui)</li>
+    <li>HTML, CSS, (some JS, but still learning!)</li>
+    <li>Windows internals (Registry, NTFS, Windows API)</li>
+    <li>Exploring: OS Architecture, cryptography, cybersecurity</li>
+</ul>
+                </div>
+            </div>
+</div>
+
+<div id="template-credits" class="template" style="display: none;">
+            <div class="title">
+                <span style="display: flex; align-items: center; gap: 5px;"><i class="lni lni-file-pencil"></i>Languages and tools.md</span>
+                <span style="display: flex; gap: 10px" class="buttons">
+                    <span>–</span>
+                    <span>▢</span>
+                    <span>⨉</span>
+                </span>
+            </div>
+            <div class="main">
+                <!-- Hello, World! -->
+                <div class="formatted">
+
+<h3>Credits for the website design:</h3>
+<ul>
+    <li>Visuals inspired by Apple's UI and Frutiger Aurora.</li>
+    <li>Font used is <a href="https://developer.apple.com/fonts/" target="_blank" rel="noopener noreferrer">SF Pro</a>.</li>
+    <li>Background art by <a href="https://wallpaper-house.com/wallpaper-id-231002.php" target="_blank" rel="noopener noreferrer">Anteddd Dbgoy</a>.</li>
+    <li>Everything else: Made by yours truly.</li>
+    <li><small style="color: #ffffff81;"><i>Yes, no that also means no AI!</i></small></li>
+</ul>
+                </div>
+            </div>
+</div>
+
+<div id="template-project-forum" class="template" style="display: none;">
+            <div>
+                <div class="title">
+                    <span style="display: flex; align-items: center; gap: 5px;"><i class="lni lni-file-pencil"></i>Classboards.md</span>
+                    <span style="display: flex; gap: 10px" class="buttons">
+                        <span>–</span>
+                        <span>▢</span>
+                        <span>⨉</span>
+                    </span>
+                </div>
+                <div class="main" style="margin-bottom: 10px;">
+                    <div class="formatted standalone">
+                        <h3>Classboards:</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="horizontal">
+                <div>
+                    <div class="title">
+                        <span style="display: flex; align-items: center; gap: 5px;"><i class="lni lni-file-pencil"></i>README.md</span>
+                        <span style="display: flex; gap: 10px" class="buttons">
+                            <span>–</span>
+                            <span>▢</span>
+                            <span>⨉</span>
+                        </span>
+                    </div>
+                    <div class="main">
+                        <!-- Hello, World! -->
+                        <div class="formatted">
+
+        <h3>What is it?:</h3><hr>
+        <p>A forum/messageboard platform designed to bridge communication within the HHS Community.</p>
+        <small><p>(Please excuse the horrendous UI, I put it together in around a week since I was running out of time and spent most of it learning Flask and SQLite. Plus, this is 2 years old.)</p></small>
+        <h3>How does it work?</h3><hr>
+        <p>Classboards is built in Flask and uses the SQLite database system. With a frontend created in pure HTML and CSS and zero JS.</p>
+        <p>It uses Flask's Jinja templating engine to pass data between the backend (Python) and the frontend. Each page is dynamically rendered using templates, with content such as posts and account info pulled directly from the SQLite database.</p>
+        <p>This database stores information such as user accounts (usernames, emails, passwords, age, and teacher/parent status) and posts (titles, content, and associated usernames).</p>
+        <p>Now, why exactly would it need to know the Parent/Teacher status? That's because there's a dedication section for posts known as the Parent Bridge.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="title">
+                        <span style="display: flex; align-items: center; gap: 5px;"><i class="lni lni-file-pencil"></i>Images.md</span>
+                        <span style="display: flex; gap: 10px" class="buttons">
+                            <span>–</span>
+                            <span>▢</span>
+                            <span>⨉</span>
+                        </span>
+                    </div>
+                    <div class="main">
+                        <!-- Hello, World! -->
+                        <div class="formatted">
+
+        <h3>What it looks like:</h3>
+        <hr>
+        <div class="image-container">
+            <img src="projects/classboards/pictures/home.png" alt="Classboards homepage." style="width: 100%;" data-caption="The homepage of Classboards and the official HHS website.">
+            <div class="caption">
+                The homepage of Classboards and the official HHS website.
+            </div>
+            <img src="projects/classboards/pictures/classboards.png" alt="Classboards message board." style="width: 100%;" data-caption="The main forum message board page of Classboards.">
+            <div class="caption">
+                The main forum message board page of Classboards.
+            </div>
+            <img src="projects/classboards/pictures/parentbridge.png" alt="Parent Bridge." style="width: 100%;" data-caption="A message board just for parents and teachers.">
+            <div class="caption">
+                A message board just for parents and teachers.
+            </div>
+            <img src="projects/classboards/pictures/dashboard.png" alt="Classboards dashboard." style="width: 100%;" data-caption="A dashboard to manage everything about your Classboards account.">
+            <div class="caption">
+                A dashboard to manage everything about your Classboards account.
+            </div>
+        </div>
+        <hr>
+        <h3>Code examples:</h3>
+        <hr>
+        <div class="image-container">
+            <img src="projects/classboards/pictures/code python 1.png" alt="Flask initialization and route for root URL." style="width: 100%;" data-caption="Python imports, Flask instance creation, internal configurations and route for root URL.">
+            <div class="caption">
+                Python imports, Flask instance creation, internal configurations and route for root URL.
+            </div>
+            <img src="projects/classboards/pictures/code python 2.png" alt="The register form retrives data from the form and inserts it into the database for account registration." style="width: 100%;" data-caption="The register form retrives data from the form and inserts it into the database for account registration.">
+            <div class="caption">
+                The register form retrives data from the form and inserts it into the database for account registration.
+            </div>
+            <img src="projects/classboards/pictures/db users 1.png" alt='An example of user-submitted data in the "users" table of the database.' style="width: 100%;" data-caption='An example of user-submitted data in the "users" table of the database.'>
+            <div class="caption">
+                An example of user-submitted data in the "users" table of the database.
+            </div>
+            <img src="projects/classboards/pictures/code python 3.png" alt="Displays the classboards page by retrieving all posts from the database and sends data to be rendered in the corresponding HTML file." style="width: 100%;" data-caption="Displays the classboards page by retrieving all posts from the database and sends data to be rendered in the corresponding HTML file.">
+            <div class="caption">
+                Displays the classboards page by retrieving all posts from the database and sends data to be rendered in the corresponding HTML file.
+            </div>
+            <img src="projects/classboards/pictures/code html 1.png" alt="By using Jinja2 (Flask's renderer), data from the database is sent from Python to the HTML and formatted like this." style="width: 100%;" data-caption="By using Jinja2 (Flask's renderer), data from the database is sent from Python to the HTML and formatted like this.">
+            <div class="caption">
+                By using Jinja2 (Flask's renderer), data from the database is sent from Python to the HTML and formatted like this.
+            </div>
+        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</div>
+
+
+<div id="template-project-malware" class="template" style="display: none;">
+            <div>
+                <div class="title">
+                    <span style="display: flex; align-items: center; gap: 5px;"><i class="lni lni-file-pencil"></i>PyCorrupt.md</span>
+                    <span style="display: flex; gap: 10px" class="buttons">
+                        <span>–</span>
+                        <span>▢</span>
+                        <span>⨉</span>
+                    </span>
+                </div>
+                <div class="main" style="margin-bottom: 10px;">
+                    <div class="formatted standalone">
+                        <h3>PyCorrupt:</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="horizontal">
+                <div>
+                    <div class="title">
+                        <span style="display: flex; align-items: center; gap: 5px;"><i class="lni lni-file-pencil"></i>README.md</span>
+                        <span style="display: flex; gap: 10px" class="buttons">
+                            <span>–</span>
+                            <span>▢</span>
+                            <span>⨉</span>
+                        </span>
+                    </div>
+                    <div class="main">
+                        <!-- Hello, World! -->
+                        <div class="formatted">
+
+        <h3>What is it?:</h3><hr>
+        <p>A small but effective wiperware malware prototype written in Python.</p>
+        <small><p>(Just a reminder: I created this purely for educational purposes to learn about the Windows API and other low-level system behavior, I will not be sharing the destructive functionality, but only how the visuals work.)</p></small>
+
+        <h3>How does it work?</h3><hr>
+        <p>Basically, Windows uses something called GDI (Graphics Device Interface) to handle all its drawing operations, from rendering windows and buttons to drawing directly on the screen. With Python's <code>pywin32</code> library, you can tap into GDI functions like <code>PatBlt</code>, <code>BitBlt</code> and many more to create intense visual effects that look like they're straight out of a stereotypical computer-exploding virus. This project uses loops and screen resolution-based calculations to spam the display with boxes, distortions and flashing shapes at high speeds.</p>
+        <p>The way the destructive part works is by overwriting the Master Boot Record (MBR), which is the first 512 bytes of the physical drive where Windows is installed, with custom hex (basically garbage random) data. This MBR contains the partition table and bootloader, without it, your system has no idea where to locate or load the operating system, effectively making it unbootable and barely repairable.</p>
+        <h3>How dangerous is this? Is my morality put into question for it?</h3><hr>
+        <p>For the latter, that's up to you.</p>
+        <p>For how dangerous it actually is. It's quite dangerous. Let me explain:</p>
+        <p>The way the destructive code works is by overwriting the first 512 bytes of the raw physical disk (Not just a partition like C:/, but the entire drive).</p>
+        <p>This is what the MBR is structured like:</p>
+        <table>
+            <tr>
+                <th>Section</th>
+                <th>Size (bytes)</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <th>Bootloader Code</th>
+                <th>446</th>
+                <th>First-stage boot code</th>
+            </tr>
+            <tr>
+                <th>Partition table</th>
+                <th>64</th>
+                <th>Four 16-byte entries</th>
+            </tr>
+            <tr>
+                <th>Boot signature</th>
+                <th>2</th>
+                <th>Always <code>0x55AA</code></th>
+            </tr>
+        </table>
+        <p>My code wipes all 512 bytes. The entire partition layout is lost and thus makes it unreadable by most OSes.</p>
+        <h3>The light at the end of the road:</h3><hr>
+        <p>Adding a little PSA here, if you ever find yourself to fall victim to such a horrible fate. You still have the choice of using recovery tools such as "TestDisk" or "DMDE" to recover your data. Good luck though!</p>
+
+        <!--  -->
+
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="title">
+                        <span style="display: flex; align-items: center; gap: 5px;"><i class="lni lni-file-pencil"></i>Images.md</span>
+                        <span style="display: flex; gap: 10px" class="buttons">
+                            <span>–</span>
+                            <span>▢</span>
+                            <span>⨉</span>
+                        </span>
+                    </div>
+                    <div class="main">
+                        <div class="formatted">
+
+        <h3>What it looks like:</h3>
+        <hr>
+        <div class="image-container">
+            <img src="projects/pycorrupt/clip1.webp" alt="GDI Effects Clip 1." style="width: 100%;">
+            <img src="projects/pycorrupt/clip2.webp" alt="GDI Effects Clip 2." style="width: 100%;">
+            <img src="projects/pycorrupt/clip3.webp" alt="GDI Effects Clip 3." style="width: 100%;">
+            <img src="projects/pycorrupt/clip4.webp" alt="GDI Effects Clip 4." style="width: 100%;">
+        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</div>
+
+<div id="power-options-preview" style="display: none;">
+  <div id="power-options-box">
+    <h2>Power Options</h2>
+    <p>Hey there! I added this as a little easter egg. Thanks for messing around enough to find me! :)</p>
+    <div class="horizontal">
+        <button onclick="togglePowerOptions(false); switchTemplate('template-credits')">View credits</button>
+        <button onclick="location.reload();">Reload website</button>
+        <button onclick="togglePowerOptions(false)">Close</button>
+    </div>
+  </div>
+</div>
+
+
+<div id="image-preview">
+  <span id="close-preview">×</span>
+  <img id="preview-img" src="" alt="Preview">
+</div>
+
+<script src="viewer.js"></script>
+<script>
+  window.addEventListener('load', () => {
+    const preloader = document.getElementById('preloader');
+    if (preloader) {
+      preloader.style.opacity = '0';
+      setTimeout(() => {
+        preloader.style.display = 'none';
+      }, 500);
+    }
+  });
+</script>
+
+<script defer>
+function updateTime() {
+    const clockElement = document.getElementById('clock');
+    const now = new Date();
+    clockElement.textContent = now.toLocaleTimeString(); // Formats time based on locale
+}
+setInterval(updateTime, 1000);
+updateTime();
+
+
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  console.log("DOM fully loaded and parsed");
+
+  const navLinks = document.querySelectorAll('nav a');
+  const container = document.querySelector('.container');
+
+  if (!container) {
+    console.log(".container not found");
+    return;
+  }
+
+  navLinks.forEach(link => {
+    console.log("Found nav link:", link);
+
+    link.addEventListener('click', () => {
+      navLinks.forEach(l => l.querySelector('span').classList.remove('active'));
+      link.querySelector('span').classList.add('active');
+
+      const targetId = link.getAttribute('data-target');
+      console.log("Target ID:", targetId);
+
+      const template = document.getElementById(targetId);
+      if (!template) {
+        console.log("Template not found for ID:", targetId);
+        return;
+      }
+      container.style.opacity = 0;
+
+      setTimeout(() => {
+        container.innerHTML = template.innerHTML;
+        container.style.opacity = 1;
+        console.log("Content swapped successfully");
+      }, 300);
+    });
+  });
+});
+</script>
+<script>
+function switchTemplate(targetId) {
+  const template = document.getElementById(targetId);
+  const container = document.querySelector('.container');
+
+  if (!template || !container) {
+    console.log("Template or container not found");
+    return;
+  }
+
+  container.style.opacity = 0;
+
+  setTimeout(() => {
+    container.innerHTML = template.innerHTML;
+    container.style.opacity = 1;
+  }, 300);
+}
+
+</script>
+
+
+
+
+</body>
+</html>
