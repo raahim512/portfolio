@@ -419,6 +419,21 @@ You can check out the pages on this website to know more about me and my project
 </script>
 
 <script defer>
+  function resizeBackground() {
+    const styleSheet = document.styleSheets[0];
+    const ruleIndex = Array.from(styleSheet.cssRules).findIndex(
+      rule => rule.selectorText === "body::before"
+    );
+
+    if (ruleIndex !== -1) {
+      styleSheet.cssRules[ruleIndex].style.height = window.innerHeight + "px";
+    }
+  }
+
+  window.addEventListener("resize", resizeBackground);
+  window.addEventListener("orientationchange", resizeBackground);
+  resizeBackground();
+
 function updateTime() {
     const clockElement = document.getElementById('clock');
     const now = new Date();
